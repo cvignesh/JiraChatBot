@@ -14,9 +14,6 @@ OPENAI_API_KEY="your-openai-api-key"
 jira_options = {"server": JIRA_SERVER}
 jira = JIRA(options=jira_options, basic_auth=(JIRA_EMAIL, JIRA_API_TOKEN))
 
-jira_options = {"server": JIRA_SERVER}
-jira = JIRA(options=jira_options, basic_auth=(JIRA_EMAIL, JIRA_API_TOKEN))
-
 # --- OpenAI LLM Setup ---
 llm = ChatOpenAI(model="gpt-4-turbo", openai_api_key="OPENAI_API_KEY", temperature=0)
 
